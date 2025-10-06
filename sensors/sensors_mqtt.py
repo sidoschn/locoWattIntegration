@@ -1539,16 +1539,6 @@ SENSORS = [
     "func": lambda js: js['values']["bdc2_soc"],
     "divider": 1,
     "unique_name": "mqtt_142",
-  },
-  {
-    "name": "Time of last update",
-    "device_class": SensorDeviceClass.TIMESTAMP,
-    "unit_of_measurement": None,
-    "state_class": SensorStateClass.MEASUREMENT,
-    "icon":"mdi:clock-time-eight",
-    "func": lambda js: datetime_formatter(js),
-    "divider": 1,
-    "unique_name": "mqtt_143",
   }
 
 
