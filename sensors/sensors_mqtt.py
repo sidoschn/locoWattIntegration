@@ -1525,7 +1525,7 @@ SENSORS = [
     "device_class": SensorDeviceClass.BATTERY,
     "unit_of_measurement": PERCENTAGE,
     "state_class": SensorStateClass.MEASUREMENT,
-    "icon": "mdi:cards-heart",
+    "icon": "mdi:battery",
     "func": lambda js: js['values']["bdc1_soc"],
     "divider": 1,
     "unique_name": "mqtt_141",
@@ -1535,10 +1535,20 @@ SENSORS = [
     "device_class": SensorDeviceClass.BATTERY,
     "unit_of_measurement": PERCENTAGE,
     "state_class": SensorStateClass.MEASUREMENT,
-    "icon": "mdi:cards-heart",
+    "icon":"mdi:battery",
     "func": lambda js: js['values']["bdc2_soc"],
     "divider": 1,
     "unique_name": "mqtt_142",
+  },
+  {
+    "name": "Time of last update",
+    "device_class": SensorDeviceClass.TIMESTAMP,
+    "unit_of_measurement": None,
+    "state_class": SensorStateClass.MEASUREMENT,
+    "icon":"mdi:battery",
+    "func": lambda js: js['time'],
+    "divider": 1,
+    "unique_name": "mqtt_143",
   }
 
 
