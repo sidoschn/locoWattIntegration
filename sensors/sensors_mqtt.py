@@ -1545,8 +1545,8 @@ SENSORS = [
     "device_class": SensorDeviceClass.TIMESTAMP,
     "unit_of_measurement": None,
     "state_class": SensorStateClass.MEASUREMENT,
-    "icon":"mdi:battery",
-    "func": lambda js: js['time'],
+    "icon":"mdi:clock-time-eight",
+    "func": lambda js: datetime_formatter(js),
     "divider": 1,
     "unique_name": "mqtt_143",
   }
