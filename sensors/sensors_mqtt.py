@@ -1528,7 +1528,7 @@ SENSORS = [
     "icon": "mdi:cards-heart",
     "func": lambda js: js['values']["bdc1_soc"],
     "divider": 1,
-    "unique_name": "mqtt_140",
+    "unique_name": "mqtt_141",
   },
   {
     "name": "Battery 2 SOC",
@@ -1538,7 +1538,7 @@ SENSORS = [
     "icon": "mdi:cards-heart",
     "func": lambda js: js['values']["bdc2_soc"],
     "divider": 1,
-    "unique_name": "mqtt_140",
+    "unique_name": "mqtt_142",
   }
 
 
