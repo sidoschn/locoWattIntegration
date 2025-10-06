@@ -1519,6 +1519,26 @@ SENSORS = [
     "func": lambda js: js['values']["bms_soh"],
     "divider": 1,
     "unique_name": "mqtt_140",
+  },
+  {
+    "name": "Battery 1 SOC",
+    "device_class": SensorDeviceClass.BATTERY,
+    "unit_of_measurement": PERCENTAGE,
+    "state_class": SensorStateClass.MEASUREMENT,
+    "icon": "mdi:cards-heart",
+    "func": lambda js: js['values']["bdc1_soc"],
+    "divider": 1,
+    "unique_name": "mqtt_140",
+  },
+  {
+    "name": "Battery 2 SOC",
+    "device_class": SensorDeviceClass.BATTERY,
+    "unit_of_measurement": PERCENTAGE,
+    "state_class": SensorStateClass.MEASUREMENT,
+    "icon": "mdi:cards-heart",
+    "func": lambda js: js['values']["bdc2_soc"],
+    "divider": 1,
+    "unique_name": "mqtt_140",
   }
 
 
